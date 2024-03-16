@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "name": "dbz-finder",
+  "version": "1.0.0",
+  "description": "A discord bot about Dragon ball",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
