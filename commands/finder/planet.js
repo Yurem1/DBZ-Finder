@@ -4,7 +4,7 @@ const {
   EmbedBuilder
 } = require('discord.js');
 
-const { DRAGON_BALL, KRILLIN } = require('../../data/attachments/attachments.js');
+const { KRILLIN } = require('../../data/attachments/attachments.js');
 const { fetchPlanet } = require('../../data/api/fetch.js');
 const { displayError } = require('../../data/attachments/embeds.js');
 
@@ -12,7 +12,6 @@ function displayPlanetEmbed(_obj) {
   return new EmbedBuilder()
     .setColor(0x00FF00)
     .setTitle(_obj.name)
-    .setThumbnail('attachment://dragon_ball.png')
     .setImage(_obj.image)
     .setFooter({
       text: `ID: ${_obj.id}`
@@ -48,8 +47,7 @@ module.exports = {
     const embed = displayPlanetEmbed(request[0]);
 
     await interaction.reply({
-      embeds: [embed],
-      files: [DRAGON_BALL]
+      embeds: [embed]
     });
   }
 }
